@@ -1,4 +1,4 @@
-#Base App
+# Base App
 
 Um modelo básico de App AngularJS usado na Plataforma InCeres. 
 
@@ -6,7 +6,7 @@ Vem também com o cliente do <a href="https://github.com/pusher/pusher-angular" 
 
 Esse esqueleto já vem com um Gruntfile construído a duras penas para produzir um código HTML, JS e CSS para ambientes de dev e produção.
 
-##Instalação
+## Instalação
 
 Você vai precisar ter o NVM e o RVM instalados. Adicione a versão do NodeJS _(eca!)_ e do Ruby de sua preferência. Eles são usados apenas para tarefas de build do App.
 
@@ -27,7 +27,7 @@ Duas pastas são adicionadas ao projeto e as duas ignoradas pelo git:
     src/lib: pacotes do bower
     node_modules: pacotes do npm
 
-##Desenvolvimento
+## Desenvolvimento
 
 Ao iniciar o desenvolvimento no App, rode o comando abaixo:
 
@@ -37,7 +37,7 @@ O grunt irá fazer o build e ativar um watcher. Assim, qdo você alterar qualque
 
 Todo o conteúdo do site a ser servido por um webserver estará na pasta `www`
 
-##Abrindo em um browser
+## Abrindo em um browser
 
 O NodeJS _(bleeargh)_ te oferece a possibilidade de rodar o App em um WebServer e assim te permitir abrir o App em um browser. Não faça isso! Vai por mim, quanto menos NodeJS _(ungh)_ vc usar, melhor! hehehe!
 
