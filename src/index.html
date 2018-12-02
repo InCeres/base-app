@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <base href="/">
+    <link rel="icon" href="/img/favicon.ico">
+    <meta http-equiv="x-ua-compatible" content="IE=Edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <script src="https://js.pusher.com/4.1/pusher.min.js"></script>
+
+    <!-- injector:css -->
+    <!-- endinjector -->
+
+    <title>Base App | Home</title>
+
+  </head>
+  <body ng-app="base">
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/">Dev Pira InCeres</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li ui-sref-active="active"><a ui-sref="homeState"><i class="fa fa-home"></i> Home</a></li>
+          </ul>
+
+          <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Hello {{loggedUser.name}} <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a ng-click="showMyInfo()">My Info</a></li>
+                <li><a ui-sref="logout">Logout</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <ui-view></ui-view>
+
+    <!-- injector:js -->
+    <!-- endinjector -->
+
+    @@liveReload
+  </body>
+</html>
